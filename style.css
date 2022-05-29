@@ -1,13 +1,16 @@
+/* To set html attributes*/
 html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+/*body attributes*/
 body{
     background-color:gainsboro;
 }
 
+/*Task container*/
 .wrapper{
     margin: 150px auto ;
     max-width: 350px;
@@ -16,13 +19,14 @@ body{
     background-color: white;
 
 }
-
+/*Todolist Container Header*/
 .wrapper header{
     font-size: 25px;
     font-weight: 500;
     text-align: center;
 
 }
+/*Todolist  input field*/
 .wrapper .input-info{
     display: flex;
     height: 30px;
@@ -31,8 +35,7 @@ body{
     
 }
 
-
-
+/*Input field related*/
 .input-info input{
     height: 90%;
     width: 85%;
@@ -43,7 +46,7 @@ body{
     margin-left: 25px;
 
 }
-
+/*Task Add button*/
 .input-info button{
 
     background-color:inherit;
@@ -56,11 +59,13 @@ body{
     pointer-events: none; */
    
 }
+/*Task active related attributes*/
 
 .input-info button.active{
     pointer-events: auto;
     opacity: 1;
 }
+/*Task list div attributes*/
 
 .list-container .task-list{
 
@@ -71,6 +76,8 @@ body{
     overflow: auto;
     padding: 0 30px;
 }
+
+/*Task list related*/
 .task-list li{
     list-style: none;
     line-height: 35px;
@@ -81,7 +88,7 @@ body{
     background:bisque;
 }
    
-
+/*Delete button related*/
 
 .task-list li span{
     cursor:pointer;
@@ -96,11 +103,12 @@ body{
 
 
 }
+/*Delete button changes  on hover */
 .task-list li:hover span{
     color: green;
 
 }
-
+/*Task Status div related*/
 .wrapper .task-status{
     position: relative;
     margin-top: 20px;
@@ -108,10 +116,12 @@ body{
     
 }
 
+/*All Clear button related*/
 .task-status button{
 
     padding-left: 90px;
 }
+/*All Clear Button related*/
 #textButton{
 
     line-height: 30px;
@@ -120,10 +130,11 @@ body{
     background-color: white;
     text-decoration: underline;
 }
+/*All clear button color change on hover*/
 #textButton:hover{
     color: green;
 }
-
+/*To change checked checkbox background*/
 input[type=checkbox]:checked{
     accent-color: red;
     

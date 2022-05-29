@@ -1,36 +1,58 @@
-<!--Below line specifies document declaration-->>
+<!--Below line specifies document declaration-->
 <!DOCTYPE html>
+<!--start of HTML Page-->
 <html lang="en">
+    <!--Start of Head of the HTML Page-->
     <head>
+        <!--Below line specifies title of the page-->
         <title>
             Todolist
         </title>
+        <!--Below line specifies character encoding for html document-->
         <meta charset="UTF-8">
+        <!--Below line controls the width and scaling of the view port-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- external Stylesheet is added through below line-->
         <link rel="stylesheet" href="style.css">
+        <!--fontawesome stylesheet is added through below line-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
+        <!--Below line specifies end of head of the page-->
     </head>
-    <body>
+    <!--Start of the body of the html-->
+    <!-->
+        <!--Start of the container of the TodoApp-->
         <div class="wrapper">
+            <!--Todo App Heading-->
             <header>Todolist</header>
+            <!--Start of Div for capturing input data and command-->
             <div class="input-info">
                 <!-- <i class="fa-solid fa-list"></i> -->
+                <!--Input field for capturing todo information-->
                 <input id="input-info-val" type="text" placeholder=" Add to your todolist">
+                <!--Through plus button we are  adding task information -->
                 <button id="input-info-btn"><i class="fas fa-plus"></i></button>
+                <!-- End of input Divs-->
             </div>
+            <!--Start of div for task list information display-->
             <div class="list-container">
+                <!--Start of unordered List for displaying task information-->
                 <ul class="task-list">
                     
-                    
+                  <!--End of unornderd list-->
                 </ul>
             </div>
+            <!--div for task status and clear input info-->
             <div class="task-status">
                 <span>Tasks left is <span id="pending-num"></span></span>
                 <button id="textButton" onclick="clearAll()">
                     Clear All</button>
+                    <!--Closing of div related to task status and all clear button-->
             </div>
+            <!--End of Todo App div-->
         </div>
+        <!--Below line for adding Javascript file-->
         <script src="script.js"></script>
+         <!--End of the body of the html-->
     </body>
+    <!--Below line specifies end of html page-->
 </html>
