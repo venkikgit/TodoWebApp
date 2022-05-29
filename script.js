@@ -31,7 +31,7 @@ function  showlist() {
 
         output += `
         <ul class="task-list">
-        <li>${data}<span onclick ="deleteTask(${index})"><i class="fas fa-circle-xmark"></i></span></li>
+        <li class="item"><input id="check-box"type="checkbox">${data}<span onclick ="deleteTask(${index})"><i class="fas fa-circle-xmark"></i></span></li>
         </ul>
         `
       
@@ -52,3 +52,15 @@ function  showlist() {
       localStorage.clear();
       showlist();
    }
+
+   const allInputs = document.querySelectorAll("input");
+   allInputs.forEach(input =>{
+       input.addEventListener('click',ele=>{
+           if(ele.target.checked){
+               ele.target.parentElement.style.backgroundColor ="aquamarine";
+           }else{
+            ele.target.parentElement.style.backgroundColor ="";
+           }
+       });
+
+   });

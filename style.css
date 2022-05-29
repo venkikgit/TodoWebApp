@@ -123,3 +123,10 @@ body{
 #textButton:hover{
     color: green;
 }
+
+input[type=checkbox]:checked{
+    accent-color: red;
+    
+}
+
+
