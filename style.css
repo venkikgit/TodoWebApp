@@ -1,0 +1,125 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color:gainsboro;
+}
+
+.wrapper{
+    margin: 150px auto ;
+    max-width: 350px;
+    height: 300px;
+    width: 100%;
+    background-color: white;
+
+}
+
+.wrapper header{
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+
+}
+.wrapper .input-info{
+    display: flex;
+    height: 30px;
+    width: 100%;
+    margin: 5px auto;
+    
+}
+
+
+
+.input-info input{
+    height: 90%;
+    width: 85%;
+    border: 1px solid #ccb ;
+    font-size: large;
+    border-radius: 2px;
+    padding-left: 2px;
+    margin-left: 25px;
+
+}
+
+.input-info button{
+
+    background-color:inherit;
+    border:none;
+    margin-left: -25px; 
+
+    cursor:pointer;
+    outline: none;
+    /* opacity: 0.5;
+    pointer-events: none; */
+   
+}
+
+.input-info button.active{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.list-container .task-list{
+
+    list-style: none;
+    max-height: 150px;
+    line-height: 30px;
+    position: relative;
+    overflow: auto;
+    padding: 0 30px;
+}
+.task-list li{
+    list-style: none;
+    line-height: 35px;
+    padding: 0 10px;
+    margin-bottom: 5px;
+    cursor: default;
+    overflow: hidden;
+    background:bisque;
+}
+   
+
+
+.task-list li span{
+    cursor:pointer;
+    position: absolute;
+    right: 20px;
+    width: 5px;
+    text-align: justify;
+    color: white;
+    cursor: pointer;
+   
+
+
+
+}
+.task-list li:hover span{
+    color: green;
+
+}
+
+.wrapper .task-status{
+    position: relative;
+    margin-top: 20px;
+    padding-left: 30px;
+    
+}
+
+.task-status button{
+
+    padding-left: 90px;
+}
+#textButton{
+
+    line-height: 30px;
+    border: none;
+    font-size: large;
+    background-color: white;
+    text-decoration: underline;
+}
+#textButton:hover{
+    color: green;
+}
